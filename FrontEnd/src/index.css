@@ -58,9 +58,14 @@ header button{
 
 header button:hover{
   cursor: pointer;
-  background-color: #444;
-  padding: 4px 8px;
+  color: #914608;
+  padding: 2px 4px;
   border-radius: 5px;
+}
+
+header button:active{
+  transform: scale(0.98);
+  
 }
 
 .foods{
@@ -144,4 +149,181 @@ header button:hover{
 }
 .food-actions button:hover{
   background-color: #c66c24;
+}
+
+.food-actions button:active{
+  transform: scale(0.98);
+}
+
+.modal-backdrop{
+  width: 70%;
+  border: none;
+  max-width: 40rem;
+  border-radius: 8px;
+ 
+  background-color: rgb(203, 187, 164);
+  color: black;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  animation: slide-down 300ms ease-out forwards;
+}
+.modal-backdrop::backdrop{
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.modal-backdrop h3{
+  margin: 0;
+  padding-left: 0.6rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+.cart-items{
+  list-style: none;
+  margin: 0;
+  padding-left: 0.8rem;
+}
+.cart-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 0;
+  font-family: "Roboto", sans-serif;
+}
+.cart-item-actions{
+  display: flex;
+  gap: 0.5rem;
+}
+.cart-item-actions button{
+  background-color: rgb(35, 34, 34);
+  color: orange;
+  border: none;
+  font-size: 1rem;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cart-item-actions button:active{
+  transform: scale(0.95);
+}
+
+.cart-total-amount{
+  text-align: right;
+  margin-top: 1.7rem;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  padding-right:0.4rem ;
+}
+
+.amount-span{
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.cart-actions{
+  display: flex;
+  justify-content: flex-end;
+  align-items:center ;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.cart-actions-checkout{
+  background-color: #ad5d24;
+  border: none;
+  color: #1f1a09;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+.cart-actions-checkout:hover{
+  background-color: #c66c24;
+}
+.cart-actions-checkout:active{
+  transform: scale(0.98);
+}
+
+.cart-actions-close{
+  background-color: transparent;
+  border: none;
+  color: #1f1a09;
+  font-size: 1rem;
+  padding: 0.5rem 0.8rem;
+  
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+.cart-actions-close:hover{
+  color: #ad5d24;
+}
+.cart-actions-close:active{
+  transform: scale(0.98);
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  
+ 
+}
+.input{
+  display: flex;
+  flex-direction: column;
+}
+
+.input label{
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  color: #1f1a09;
+}
+.input input{
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: black;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #e4dcdc;
+  max-width: 70%;
+}
+.payment-method{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form-actions{
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -1,10 +1,10 @@
-import {useSelector,useDispatch} from 'react-redux'
+import {useDispatch} from 'react-redux'
 import { storeActions } from '../store/CartStore';
 export default ({ food }) => {
     const dispatch = useDispatch();
 
     function addToCartHandler() {
-        dispatch(storeActions.addToCart({food}))
+        dispatch(storeActions.addToCart(food))
     }
   return (
     <li className="food-item">

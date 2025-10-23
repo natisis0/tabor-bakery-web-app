@@ -32,11 +32,32 @@ const cartSlice = createSlice({
   },
 });
 
+const progressSlice = createSlice({
+  name: "progress",
+  initialState: {
+    showCartIs: '', showCheckoutIs: ''
+  },
+  reducers: {
+    showCart: (state) => {
+      state.showCartIs = 'show';
+    },
+    hideCart: (state) => {
+      state.showCartIs = '';
+    },
+    showCheckout: (state) => {
+      state.showCheckoutIs = 'checkout';
+    },
+    hideCheckout: (state) => {
+      state.showCheckoutIs = '';
+    },
+  },
+});
 
 const store = configureStore({
-    reducer: {cart : cartSlice.reducer}
-})
+  reducer: { cart: cartSlice.reducer, progress: progressSlice.reducer },
+});
 
-export const storeActions = cartSlice.actions
+export const storeActions = cartSlice.actions;
+export const progressActions = progressSlice.actions;
 
-export default store
+export default store;
