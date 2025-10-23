@@ -1,14 +1,13 @@
-import Header from "./components/Header"
+import Foods from "./components/foods";
+import Header from "./components/Header";
 
 function App() {
- 
-
   return (
     <>
-    <Header/>
-      
+      <Header />
+      <Foods/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

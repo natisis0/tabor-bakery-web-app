@@ -20,14 +20,15 @@ header{
   justify-content: space-between;
   align-items: center;
   padding: 3rem 10%;
+  
 
 }
-header p{
+header .main-header{
   display: flex;
   gap: 1rem;
   align-items: center;
 }
-header p img{
+header  img{
   height: 4rem;
   width: 4rem;
   object-fit: contain;
@@ -60,4 +61,87 @@ header button:hover{
   background-color: #444;
   padding: 4px 8px;
   border-radius: 5px;
+}
+
+.foods{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  list-style: none;
+  width: 90%;
+  max-width: 70rem;
+  margin: 2rem auto ;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.food-item{
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  text-align: center;
+  
+}
+
+.food-item:hover{
+  transform: scale(1.02);
+}
+
+.food-item img{
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.food-item article{
+   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.food-item h3{
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem 1rem;
+  margin-bottom: 0.8rem;
+  color: #d9e2f1;
+}
+
+.food-description{
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin: 0.5rem 1rem;
+  margin-bottom: 0.2rem;
+  color: #d9e2f1;
+  flex-grow: 1;
+}
+
+.food-price{
+  display: inline-block;
+  background-color: #292929;
+  color: #a85418;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  margin: 0;
+  border-radius: 4px;
+}
+
+.food-actions{
+  margin-bottom: 1.5rem;
+}
+.food-actions button{
+  background-color: #a85418;
+  border: none;
+  color: #1f1a09;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.food-actions button:hover{
+  background-color: #c66c24;
 }

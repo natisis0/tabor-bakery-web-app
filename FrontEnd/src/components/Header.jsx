@@ -1,14 +1,20 @@
 import logo from "../assets/tabour.png";
+import {useSelector} from 'react-redux'
+
+
 
 export default () => {
+
+  const cartItems = useSelector(state => state.cart.items);
+  const totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
   return (
     <header>
-      <p>
+      <div className="main-header">
         <img src={logo} alt="Tabour Bakery Logo" />
         <h1>Tabour Bakery </h1>
-      </p>
+      </div>
 
-      <button> Cart(0)</button>
+      <button> Cart({totalQuantity})</button>
     </header>
   );
 };

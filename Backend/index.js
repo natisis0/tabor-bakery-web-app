@@ -14,15 +14,13 @@ app.use((req, res, next) => {
 
 app.get("/food", async (req, res) => {
   try {
-    const foods = await fs.readFile("./data/foods.json", "utf-8");
+    const foods = await fs.readFile("data/foods.json", "utf-8");
     res.json(JSON.parse(foods));
-  } catch (error) {
-    res.status(500).json({ message: "Failed to read foods data" });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: "Error reading foods.json" });
   }
 });
-
-
-
 
 app.listen(3000, () => {
   console.log("Server running in port 3000");
