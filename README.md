@@ -1,14 +1,5 @@
 🍞 Tabour Bakery Web App
 
-
-
-
-
-
-
-
-
-
 A full-stack web application to showcase my frontend, backend, and React skills.
 Browse bakery items, add them to a cart, and place orders sent to the backend. Orders are temporarily stored in memory—this project is meant for skill demonstration, not production.
 
@@ -68,7 +59,7 @@ Tools: Git, VS Code
 
 Clone the repository:
 
-git clone https://github.com/yourusername/tabour-bakery.git
+git clone https://github.com/natisis0/tabour-bakery.git
 cd tabour-bakery
 
 
@@ -86,14 +77,15 @@ npm install
 Start the servers:
 
 # Backend
-npm run dev
+node index.js
+
 
 # Frontend
 cd ../frontend
-npm start
+npm run dev
 
 
-Open http://localhost:3000 in your browser.
+
 
 ⚙️ How It Works
 
