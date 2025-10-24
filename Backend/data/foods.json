@@ -1,64 +1,64 @@
 [
   {
+    "id": "f8",
+    "name": "Strawberry Cake",
+    "price": "1299.99",
+    "description": "Light and fruity strawberry cake layered with sweet cream — fresh and delicious.",
+    "image": "images/StrawberryCake.jpg"
+  },
+  {
+    "id": "f7",
+    "name": "Cup Cake",
+    "price": "79.99",
+    "description": "Mini cupcakes with fluffy sponge and creamy frosting — a perfect sweet bite.",
+    "image": "images/CupCake.jpg"
+  },
+  {
+    "id": "f4",
+    "name": "Chocolate Ganache Cake",
+    "price": "1349.99",
+    "description": "Decadent chocolate cake smothered in silky ganache — pure chocolate bliss.",
+    "image": "images/Chocolate Ganache Cake.png"
+  },
+  {
     "id": "f1",
     "name": "Boxegna Cake",
-    "price": "12.99",
+    "price": "99.99",
     "description": "Moist and fluffy Boxegna cake topped with a luscious frosting — perfect for celebrations.",
     "image": "images/boxegna cake.png"
   },
   {
     "id": "f2",
     "name": "Breads",
-    "price": "4.99",
+    "price": "9.99",
     "description": "Freshly baked golden breads with a soft, airy inside — ideal for breakfast or snacks.",
     "image": "images/Breads.png"
   },
   {
     "id": "f3",
     "name": "Cake",
-    "price": "10.99",
+    "price": "1199.99",
     "description": "Classic layered cake with rich cream frosting — a treat everyone will love.",
     "image": "images/Cake.jpg"
   },
   {
-    "id": "f4",
-    "name": "Chocolate Ganache Cake",
-    "price": "13.49",
-    "description": "Decadent chocolate cake smothered in silky ganache — pure chocolate bliss.",
-    "image": "images/Chocolate Ganache Cake.png"
-  },
-  {
     "id": "f5",
     "name": "Chocolate",
-    "price": "6.99",
+    "price": "149.99",
     "description": "Creamy chocolate bars made for chocolate lovers — smooth and irresistible.",
     "image": "images/Chocolate.jpg"
   },
   {
     "id": "f6",
     "name": "Cookies",
-    "price": "5.49",
+    "price": "349.49",
     "description": "Crispy on the outside, chewy on the inside — freshly baked cookies to enjoy anytime.",
     "image": "images/Cookies.png"
   },
   {
-    "id": "f7",
-    "name": "Cup Cake",
-    "price": "3.99",
-    "description": "Mini cupcakes with fluffy sponge and creamy frosting — a perfect sweet bite.",
-    "image": "images/CupCake.jpg"
-  },
-  {
-    "id": "f8",
-    "name": "Strawberry Cake",
-    "price": "11.49",
-    "description": "Light and fruity strawberry cake layered with sweet cream — fresh and delicious.",
-    "image": "images/StrawberryCake.jpg"
-  },
-  {
     "id": "f9",
     "name": "Vanilla Sponge Cake",
-    "price": "9.99",
+    "price": "1199.99",
     "description": "Soft and airy vanilla sponge cake, lightly sweetened — a timeless classic.",
     "image": "images/Vanilla Sponge Cake.jpg"
   }

@@ -12,7 +12,7 @@ export default ({ food }) => {
         <img src={`http://localhost:3000/${food.image}`} alt={food.name} />
         <div>
           <h3 className="food-name">{food.name}</h3>
-          <p className="food-price">${food.price}</p>
+          <p className="food-price">ETB {food.price}</p>
           <p className="food-description">{food.description}</p>
         </div>
         <p className="food-actions">

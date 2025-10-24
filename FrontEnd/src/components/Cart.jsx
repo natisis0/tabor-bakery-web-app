@@ -46,7 +46,7 @@ export default () => {
         ))}
       </ul>
       <div className="cart-total-amount">
-        Total : <span className="amount-span">${cartTotalAmount}</span>
+        Total : <span className="amount-span">ETB {cartTotalAmount}</span>
       </div>
       <div className="cart-actions">
         <button className="cart-actions-close" onClick={handleCloseCart}>

@@ -29,26 +29,37 @@ const cartSlice = createSlice({
         }
       }
     },
+    clearCart: (state) => {
+      state.items = [];
+    },
   },
 });
 
 const progressSlice = createSlice({
   name: "progress",
   initialState: {
-    showCartIs: '', showCheckoutIs: ''
+    showCartIs: "",
+    showCheckoutIs: "",
+    showSuccessIs: "",
   },
   reducers: {
     showCart: (state) => {
-      state.showCartIs = 'show';
+      state.showCartIs = "show";
     },
     hideCart: (state) => {
-      state.showCartIs = '';
+      state.showCartIs = "";
     },
     showCheckout: (state) => {
-      state.showCheckoutIs = 'checkout';
+      state.showCheckoutIs = "checkout";
     },
     hideCheckout: (state) => {
-      state.showCheckoutIs = '';
+      state.showCheckoutIs = "";
+    },
+    showSuccess: (state) => {
+      state.showSuccessIs = "success";
+    },
+    hideSuccess: (state) => {
+      state.showSuccessIs = "";
     },
   },
 });

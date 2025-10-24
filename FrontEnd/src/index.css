@@ -242,6 +242,11 @@ header button:active{
   cursor: pointer;
   font-family: "Roboto", sans-serif;
 }
+.cart-actions-checkout:disabled{
+  background-color: #292929;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
 .cart-actions-checkout:hover{
   background-color: #c66c24;
 }
@@ -255,9 +260,9 @@ header button:active{
   color: #1f1a09;
   font-size: 1rem;
   padding: 0.5rem 0.8rem;
-  
   cursor: pointer;
   font-family: "Roboto", sans-serif;
+  
 }
 .cart-actions-close:hover{
   color: #ad5d24;

@@ -5,7 +5,7 @@ export default ({ item, add, remove }) => {
   return (
     <li className="cart-item">
       <div>
-        {item.name} x {item.quantity} - ${item.price * item.quantity}
+        {item.name} x {item.quantity} - ETB {item.price * item.quantity}
       </div>
 
       <div className="cart-item-actions">
