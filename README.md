@@ -1,61 +1,22 @@
-🍞 Tabour Bakery Web App
+Tabour Bakery Web App 🍞
 
-A full-stack web application to showcase my frontend, backend, and React skills.
-Browse bakery items, add them to a cart, and place orders sent to the backend. Orders are temporarily stored in memory—this project is meant for skill demonstration, not production.
+A demo full-stack project built to showcase frontend, backend, and React skills.
+Users can browse bakery items, add them to a cart, and place orders that are sent to the backend. Orders are temporarily stored in memory—this project is for demonstration purposes only.
 
-📋 Table of Contents
-
-About the Project
-
-Features
-
-Tech Stack
+This project was bootstrapped with create-react-app for the frontend and Node.js/Express for the backend.
 
 Getting Started
+Prerequisites
 
-How It Works
+Before running the app locally, make sure you have the following installed:
 
-API Overview
+Node.js (v16 or higher recommended)
 
-Contributing
+npm, yarn, or pnpm
 
-License
+No database setup is required as orders are stored temporarily in memory.
 
-🔍 About the Project
-
-Tabour Bakery is a skill showcase project that demonstrates:
-
-React frontend with dynamic UI and cart functionality 🛒
-
-Node.js/Express backend handling orders 📦
-
-Frontend-backend interaction using API calls 🔄
-
-⚠️ Orders are temporarily stored in memory. No database is used.
-
-✨ Features
-
-Browse all available bakery items 🥐🍰
-
-Add items to a cart
-
-Submit an order to the backend
-
-Dynamic frontend-backend communication
-
-Responsive design for desktop and mobile
-
-🛠 Tech Stack
-
-Frontend: React.js, CSS / Tailwind CSS
-
-Backend: Node.js, Express.js
-
-HTTP Requests: Axios
-
-Tools: Git, VS Code
-
-🚀 Getting Started
+Installation
 
 Clone the repository:
 
@@ -63,50 +24,81 @@ git clone https://github.com/natisis0/tabour-bakery.git
 cd tabour-bakery
 
 
-Install dependencies:
+Install frontend dependencies:
 
-# Frontend
 cd frontend
 npm install
 
-# Backend
+
+Install backend dependencies:
+
 cd ../backend
 npm install
 
+Running the Development Server
 
-Start the servers:
+Start the backend server:
 
-# Backend
-node index.js
+cd backend
+node server.js
 
 
-# Frontend
-cd ../frontend
+
+Start the frontend server:
+
+cd frontend
 npm run dev
 
 
+Open http://localhost:3000
+ in your browser to see the app.
 
+You can start editing the frontend in src or the backend in backend—the servers will auto-reload changes.
 
-⚙️ How It Works
+Features
+
+Browse all bakery items 🥐🍰
+
+Add items to a cart 🛒
+
+Submit orders to the backend (stored temporarily in memory)
+
+Demonstrates frontend-backend interaction 🔄
+
+Responsive design for desktop and mobile
+
+Tech Stack
+
+Frontend: React.js, CSS
+
+Backend: Node.js, Express.js
+
+HTTP Requests: Axios
+
+Development Tools: Git, VS Code
+
+How It Works
 
 Users browse bakery items on the frontend.
 
-Items can be added to a cart.
+Add items to the cart.
 
-Orders are submitted and sent to the backend via an API call.
+Submit an order, which is sent to the backend via API.
 
-The backend temporarily stores the order in memory (for demo purposes).
+The backend temporarily holds the order in memory.
 
-📡 API Overview
+⚠️ Note: Orders are not persisted in a database. This project is for demonstration purposes.
 
-Base URL: http://localhost:5000
+API Overview
+
+Base URL: http://localhost:3000
 
 Method	Endpoint	Description
 GET	/food	Fetch all food items
 POST	/order	Submit an order (stored in memory)
-🤝 Contributing
+Contributing
 
-This project is mainly for personal portfolio, but contributions are welcome!
+This is mainly a personal project, but contributions are welcome!
 
 Fork the repository
 
@@ -115,7 +107,3 @@ Create a branch: git checkout -b feature-name
 Make changes and commit: git commit -m "Add feature"
 
 Push and open a pull request
-
-📝 License
-
-This project is open source under the MIT License.
