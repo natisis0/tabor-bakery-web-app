@@ -1,6 +1,6 @@
 import Cart from "./components/Cart";
 import CheckOut from "./components/CheckOut";
-import Foods from "./components/foods";
+import Foods from "./components/Foods";
 import Header from "./components/Header";
 
 
