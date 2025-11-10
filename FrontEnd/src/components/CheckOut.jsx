@@ -4,6 +4,11 @@ import Input from "./UI/Input";
 import { progressActions, storeActions } from "../store/CartStore";
 import { useActionState, useState } from "react";
 
+const URL =
+  "https://tabor-bakery-web-app-server.onrender.com/order" ||
+  "http://localhost:3000/order";
+
+
 export default () => {
   const cartItems = useSelector((state) => state.cart.items);
   const cartTotalAmount = cartItems.reduce(
@@ -34,7 +39,7 @@ export default () => {
   async function handleSubmit(prev, formData) {
     const data = Object.fromEntries(formData.entries());
     try {
-      const response = await fetch("http://localhost:3000/order", {
+      const response = await fetch(URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

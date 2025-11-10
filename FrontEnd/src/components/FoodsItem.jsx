@@ -9,7 +9,10 @@ export default ({ food }) => {
   return (
     <li className="food-item">
       <article>
-        <img src={`http://localhost:3000/${food.image}`} alt={food.name} />
+        <img
+          src={`https://tabor-bakery-web-app-server.onrender.com/${food.image}`}
+          alt={food.name}
+        />
         <div>
           <h3 className="food-name">{food.name}</h3>
           <p className="food-price">ETB {food.price}</p>

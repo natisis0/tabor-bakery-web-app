@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import FoodsItem from "./FoodsItem";
 
+const URL =
+  "https://tabor-bakery-web-app-server.onrender.com/food" ||
+  "http://localhost:3000/food";
+
 export default () => {
   const [foods, setFoods] = useState([]);
   const [error, setError] = useState();
@@ -9,7 +13,7 @@ export default () => {
     async function fetchFoods() {
       setIsLoading(true);
       try {
-        const response = await fetch("http://localhost:3000/food");
+        const response = await fetch(URL);
         if (!response.ok) {
           const errData = await response.json();
           throw new Error(errData.message || "failed to fetch data");
