@@ -4,6 +4,8 @@ import fs from "node:fs/promises";
 import cors from "cors";
 
 const app = express();
+const port = process.env.PORT||3000;
+
 
 app.use(express.static("public"));
 app.use(express.json());
@@ -50,6 +52,6 @@ app.use((req, res) => {
   res.status(404).json({ message: "Invalid link in the frontend" });
 });
 
-app.listen(3000, () => {
-  console.log("Server running in port 3000");
+app.listen(port, () => {
+  console.log(`Server running in port ${port}`);
 });

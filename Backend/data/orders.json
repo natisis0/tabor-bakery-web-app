@@ -1,1 +1,72 @@
-[]
+[
+  {
+    "orderedItems": [
+      {
+        "id": "f8",
+        "name": "Strawberry Cake",
+        "price": "1299.99",
+        "description": "Light and fruity strawberry cake layered with sweet cream — fresh and delicious.",
+        "image": "images/StrawberryCake.jpg",
+        "quantity": 2
+      },
+      {
+        "id": "f7",
+        "name": "Cup Cake",
+        "price": "79.99",
+        "description": "Mini cupcakes with fluffy sponge and creamy frosting — a perfect sweet bite.",
+        "image": "images/CupCake.jpg",
+        "quantity": 1
+      }
+    ],
+    "user": {
+      "name": "nebiyu",
+      "address": "n",
+      "email": "n@w",
+      "phone": "1"
+    }
+  },
+  {
+    "orderedItems": [
+      {
+        "id": "f7",
+        "name": "Cup Cake",
+        "price": "79.99",
+        "description": "Mini cupcakes with fluffy sponge and creamy frosting — a perfect sweet bite.",
+        "image": "images/CupCake.jpg",
+        "quantity": 1
+      }
+    ],
+    "user": {
+      "name": "na",
+      "address": "a",
+      "email": "a@w",
+      "phone": "12"
+    }
+  },
+  {
+    "orderedItems": [
+      {
+        "id": "f8",
+        "name": "Strawberry Cake",
+        "price": "1299.99",
+        "description": "Light and fruity strawberry cake layered with sweet cream — fresh and delicious.",
+        "image": "images/StrawberryCake.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "f7",
+        "name": "Cup Cake",
+        "price": "79.99",
+        "description": "Mini cupcakes with fluffy sponge and creamy frosting — a perfect sweet bite.",
+        "image": "images/CupCake.jpg",
+        "quantity": 1
+      }
+    ],
+    "user": {
+      "name": "Nati",
+      "address": "n",
+      "email": "n@W",
+      "phone": "1"
+    }
+  }
+]
