@@ -1,5 +1,10 @@
 Tabour Bakery Web App 🍞
 
+For Quick visit
+https://tabor-bakery-web-app.vercel.app/
+<img width="1787" height="794" alt="image" src="https://github.com/user-attachments/assets/f62576b2-c1ba-4368-9d9c-a9551fa2c045" />
+
+
 A demo full-stack project built to showcase frontend, backend, and React skills.
 Users can browse bakery items, add them to a cart, and place orders that are sent to the backend. Orders are temporarily stored in memory—this project is for demonstration purposes only.
 
